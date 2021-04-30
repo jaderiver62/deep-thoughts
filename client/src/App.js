@@ -1,6 +1,5 @@
 import React from 'react';
 
-// add these two library import statements
 import { ApolloProvider } from '@apollo/react-hooks';
 import ApolloClient from 'apollo-boost';
 
@@ -26,4 +25,5 @@ function App() {
     </ApolloProvider>
   );
 }
+
 export default App;
