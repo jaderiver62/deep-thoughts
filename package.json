@@ -1,0 +1,19 @@
+{
+  "name": "deep-thoughts",
+  "version": "1.0.0",
+  "description": "\"A React Blog Site\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaderiver62/deep-thoughts.git"
+  },
+  "author": "Nina Cummings",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jaderiver62/deep-thoughts/issues"
+  },
+  "homepage": "https://github.com/jaderiver62/deep-thoughts#readme"
+}
