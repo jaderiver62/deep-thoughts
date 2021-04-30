@@ -1,8 +1,10 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
+
+import ReactionList from '../components/ReactionList';
+
 import { useQuery } from '@apollo/react-hooks';
 import { QUERY_THOUGHT } from '../utils/queries';
-import ReactionList from '../components/ReactionList';
 
 const SingleThought = props => {
   const { id: thoughtId } = useParams();
@@ -16,6 +18,7 @@ const SingleThought = props => {
   if (loading) {
     return <div>Loading...</div>;
   }
+
   return (
     <div>
       <div className="card mb-3">
@@ -23,12 +26,13 @@ const SingleThought = props => {
           <span style={{ fontWeight: 700 }} className="text-light">
             {thought.username}
           </span>{' '}
-      thought on {thought.createdAt}
+          thought on {thought.createdAt}
         </p>
         <div className="card-body">
           <p>{thought.thoughtText}</p>
         </div>
       </div>
+
       {thought.reactionCount > 0 && <ReactionList reactions={thought.reactions} />}
     </div>
   );
